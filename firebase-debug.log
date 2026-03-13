@@ -1,0 +1,193 @@
+[debug] [2026-03-11T15:44:41.055Z] ----------------------------------------------------------------------
+[debug] [2026-03-11T15:44:41.066Z] Command:       C:\Program Files\nodejs\node.exe C:\Program Files\nodejs\node_modules\firebase-tools\lib\bin\firebase.js projects:list
+[debug] [2026-03-11T15:44:41.068Z] CLI Version:   14.17.0
+[debug] [2026-03-11T15:44:41.069Z] Platform:      win32
+[debug] [2026-03-11T15:44:41.069Z] Node Version:  v20.19.2
+[debug] [2026-03-11T15:44:41.069Z] Time:          Wed Mar 11 2026 21:14:41 GMT+0530 (India Standard Time)
+[debug] [2026-03-11T15:44:41.070Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2026-03-11T15:44:41.087Z] >>> [apiv2][query] GET https://firebase-public.firebaseio.com/cli.json [none]
+[debug] [2026-03-11T15:44:41.246Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2026-03-11T15:44:41.248Z] > authorizing via signed-in user (mdvishalagrawal@gmail.com)
+[debug] [2026-03-11T15:44:41.262Z] Checked if tokens are valid: false, expires at: 1761934090460
+[debug] [2026-03-11T15:44:41.263Z] Checked if tokens are valid: false, expires at: 1761934090460
+[debug] [2026-03-11T15:44:41.265Z] > refreshing access token with scopes: []
+[debug] [2026-03-11T15:44:41.269Z] >>> [apiv2][query] POST https://www.googleapis.com/oauth2/v3/token [none]
+[debug] [2026-03-11T15:44:41.270Z] >>> [apiv2][body] POST https://www.googleapis.com/oauth2/v3/token [omitted]
+[debug] [2026-03-11T15:44:41.721Z] <<< [apiv2][status] POST https://www.googleapis.com/oauth2/v3/token 200
+[debug] [2026-03-11T15:44:41.722Z] <<< [apiv2][body] POST https://www.googleapis.com/oauth2/v3/token [omitted]
+[debug] [2026-03-11T15:44:41.820Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects pageSize=1000
+[debug] [2026-03-11T15:44:42.170Z] <<< [apiv2][status] GET https://firebase-public.firebaseio.com/cli.json 200
+[debug] [2026-03-11T15:44:42.170Z] <<< [apiv2][body] GET https://firebase-public.firebaseio.com/cli.json {"cloudBuildErrorAfter":1594252800000,"cloudBuildWarnAfter":1590019200000,"defaultNode10After":1594252800000,"minVersion":"3.0.5","node8DeploysDisabledAfter":1613390400000,"node8RuntimeDisabledAfter":1615809600000,"node8WarnAfter":1600128000000}
+[debug] [2026-03-11T15:44:42.599Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects 200
+[debug] [2026-03-11T15:46:07.151Z] ----------------------------------------------------------------------
+[debug] [2026-03-11T15:46:07.155Z] Command:       C:\Program Files\nodejs\node.exe C:\Program Files\nodejs\node_modules\firebase-tools\lib\bin\firebase.js deploy --only hosting --project vishalagrawal-246
+[debug] [2026-03-11T15:46:07.156Z] CLI Version:   14.17.0
+[debug] [2026-03-11T15:46:07.156Z] Platform:      win32
+[debug] [2026-03-11T15:46:07.156Z] Node Version:  v20.19.2
+[debug] [2026-03-11T15:46:07.156Z] Time:          Wed Mar 11 2026 21:16:07 GMT+0530 (India Standard Time)
+[debug] [2026-03-11T15:46:07.157Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2026-03-11T15:46:07.651Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2026-03-11T15:46:07.653Z] > authorizing via signed-in user (mdvishalagrawal@gmail.com)
+[debug] [2026-03-11T15:46:07.654Z] [iam] checking project vishalagrawal-246 for permissions ["firebase.projects.get","firebasehosting.sites.update"]
+[debug] [2026-03-11T15:46:07.658Z] Checked if tokens are valid: true, expires at: 1773247480723
+[debug] [2026-03-11T15:46:07.659Z] Checked if tokens are valid: true, expires at: 1773247480723
+[debug] [2026-03-11T15:46:07.664Z] >>> [apiv2][query] POST https://cloudresourcemanager.googleapis.com/v1/projects/vishalagrawal-246:testIamPermissions [none]
+[debug] [2026-03-11T15:46:07.664Z] >>> [apiv2][(partial)header] POST https://cloudresourcemanager.googleapis.com/v1/projects/vishalagrawal-246:testIamPermissions x-goog-quota-user=projects/vishalagrawal-246
+[debug] [2026-03-11T15:46:07.665Z] >>> [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/vishalagrawal-246:testIamPermissions {"permissions":["firebase.projects.get","firebasehosting.sites.update"]}
+[debug] [2026-03-11T15:46:09.282Z] <<< [apiv2][status] POST https://cloudresourcemanager.googleapis.com/v1/projects/vishalagrawal-246:testIamPermissions 200
+[debug] [2026-03-11T15:46:09.282Z] <<< [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/vishalagrawal-246:testIamPermissions {"permissions":["firebase.projects.get","firebasehosting.sites.update"]}
+[debug] [2026-03-11T15:46:09.284Z] Checked if tokens are valid: true, expires at: 1773247480723
+[debug] [2026-03-11T15:46:09.285Z] Checked if tokens are valid: true, expires at: 1773247480723
+[debug] [2026-03-11T15:46:09.286Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/vishalagrawal-246 [none]
+[debug] [2026-03-11T15:46:09.717Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/vishalagrawal-246 200
+[debug] [2026-03-11T15:46:09.717Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/vishalagrawal-246 {"projectId":"vishalagrawal-246","projectNumber":"324021813743","displayName":"VishalAgrawal-246","name":"projects/vishalagrawal-246","resources":{"hostingSite":"vishalagrawal-246"},"state":"ACTIVE","etag":"1_fcdbd868-75a2-440b-9b5e-504b639eded8"}
+[info] 
+[info] === Deploying to 'vishalagrawal-246'...
+[info] 
+[info] i  deploying hosting 
+[debug] [2026-03-11T15:46:09.726Z] Checked if tokens are valid: true, expires at: 1773247480723
+[debug] [2026-03-11T15:46:09.726Z] Checked if tokens are valid: true, expires at: 1773247480723
+[debug] [2026-03-11T15:46:09.727Z] >>> [apiv2][query] POST https://firebasehosting.googleapis.com/v1beta1/projects/-/sites/vishalagrawal-246/versions [none]
+[debug] [2026-03-11T15:46:09.727Z] >>> [apiv2][body] POST https://firebasehosting.googleapis.com/v1beta1/projects/-/sites/vishalagrawal-246/versions {"status":"CREATED","labels":{"deployment-tool":"cli-firebase"}}
+[debug] [2026-03-11T15:46:12.208Z] <<< [apiv2][status] POST https://firebasehosting.googleapis.com/v1beta1/projects/-/sites/vishalagrawal-246/versions 200
+[debug] [2026-03-11T15:46:12.208Z] <<< [apiv2][body] POST https://firebasehosting.googleapis.com/v1beta1/projects/-/sites/vishalagrawal-246/versions {"name":"projects/324021813743/sites/vishalagrawal-246/versions/bd0b3698fbe5556c","status":"CREATED","config":{},"labels":{"deployment-tool":"cli-firebase"}}
+[info] i  hosting[vishalagrawal-246]: beginning deploy... 
+[info] i  hosting[vishalagrawal-246]: found 15 files in . 
+[debug] [2026-03-11T15:46:12.239Z] [hosting] uploading with 200 concurrency
+[debug] [2026-03-11T15:46:12.242Z] [hosting] hash cache [] not populated
+[debug] [2026-03-11T15:46:12.340Z] Checked if tokens are valid: true, expires at: 1773247480723
+[debug] [2026-03-11T15:46:12.340Z] Checked if tokens are valid: true, expires at: 1773247480723
+[debug] [2026-03-11T15:46:12.345Z] [hosting] hash cache [] stored for 15 files
+[debug] [2026-03-11T15:46:12.345Z] [hosting][hash queue][FINAL] {"max":89,"min":33,"avg":41.86666666666667,"active":0,"complete":15,"success":15,"errored":0,"retried":0,"total":15,"elapsed":100}
+[debug] [2026-03-11T15:46:12.346Z] >>> [apiv2][query] POST https://firebasehosting.googleapis.com/v1beta1/projects/324021813743/sites/vishalagrawal-246/versions/bd0b3698fbe5556c:populateFiles [none]
+[debug] [2026-03-11T15:46:12.347Z] >>> [apiv2][body] POST https://firebasehosting.googleapis.com/v1beta1/projects/324021813743/sites/vishalagrawal-246/versions/bd0b3698fbe5556c:populateFiles {"files":{"/index.html":"c75c7bc149308d9e5a8e8208ba8c21e55cc879e7fcc6616a827b665a707f3960","/assets/index-D-4-gm_i.css":"a837e434ebeb8dbd82aa03f91000086d633da2282db1330cc225f1a299de6e19","/assets/skills/Flutter.svg":"f140c02a1d89d8e860e854e805102d2e9222f532f61081d62ac2273d441bb466","/assets/skills/Postman.svg":"425548c4a1422b1f7d4a9a1252b872508ad930266d5801118d47f7d08aa55bc5","/assets/skills/Figma.svg":"05de99f110b5a863a4c0a822411ed2e1a8b5ffe06319a522c9f65c39ae217801","/assets/skills/Dart.svg":"c837eafa21f41330178bf7fcdcfc0a2261d0ba3f0f1360e7da5229843d262ede","/assets/skills/Firebase.svg":"87b176a3dc8868c164a379376c421a82689af4800e57a34e0a284e1e107c2fbd","/assets/skills/AndroidStudio.svg":"939a0961b7368aa5af57c18afce05921386e82f6d6ec2083a7de7a641053c787","/assets/images/icon-design.svg":"7b7d744e0dd1ccb357a1d59047bd2d99c9f4e8a8a0f02d00943d98ca4ea1c6a5","/assets/images/icon-dev.svg":"923a80ae3b7c33556666da6192597afe410ac81368edb047bfccd62ad9b17b48","/assets/images/icon-backend.svg":"d854f1b97b907919440c6a17fc4475799fa267058a3f3804d20280b614803e30","/assets/images/icon-app.svg":"41ca0fb1e88a5fdf3ab93538c170e6dcacf388d649f6a7f446e540e7a761d7af","/assets/images/my-avatar.png":"8f4f21244d129a9d341d00f6f4f81a70d36d4933ef54d32716be9fe6da9bd8b3","/assets/index-DvMZjxsJ.js":"2a8d4ec3f5c043fc2f3323f463e116e42cfeb42884ef5e4682de9231dfdc171c","/assets/skills/Xcode.svg":"03d0db5fcc2c7b6e3e7aa916f50c0f58f520f9f15a5417d7f1d53846d41fe6f1"}}
+[debug] [2026-03-11T15:46:13.098Z] <<< [apiv2][status] POST https://firebasehosting.googleapis.com/v1beta1/projects/324021813743/sites/vishalagrawal-246/versions/bd0b3698fbe5556c:populateFiles 200
+[debug] [2026-03-11T15:46:13.099Z] <<< [apiv2][body] POST https://firebasehosting.googleapis.com/v1beta1/projects/324021813743/sites/vishalagrawal-246/versions/bd0b3698fbe5556c:populateFiles {"uploadRequiredHashes":["923a80ae3b7c33556666da6192597afe410ac81368edb047bfccd62ad9b17b48","2a8d4ec3f5c043fc2f3323f463e116e42cfeb42884ef5e4682de9231dfdc171c","41ca0fb1e88a5fdf3ab93538c170e6dcacf388d649f6a7f446e540e7a761d7af","c837eafa21f41330178bf7fcdcfc0a2261d0ba3f0f1360e7da5229843d262ede","7b7d744e0dd1ccb357a1d59047bd2d99c9f4e8a8a0f02d00943d98ca4ea1c6a5","f140c02a1d89d8e860e854e805102d2e9222f532f61081d62ac2273d441bb466","425548c4a1422b1f7d4a9a1252b872508ad930266d5801118d47f7d08aa55bc5","c75c7bc149308d9e5a8e8208ba8c21e55cc879e7fcc6616a827b665a707f3960","d854f1b97b907919440c6a17fc4475799fa267058a3f3804d20280b614803e30","a837e434ebeb8dbd82aa03f91000086d633da2282db1330cc225f1a299de6e19","03d0db5fcc2c7b6e3e7aa916f50c0f58f520f9f15a5417d7f1d53846d41fe6f1","05de99f110b5a863a4c0a822411ed2e1a8b5ffe06319a522c9f65c39ae217801","8f4f21244d129a9d341d00f6f4f81a70d36d4933ef54d32716be9fe6da9bd8b3","87b176a3dc8868c164a379376c421a82689af4800e57a34e0a284e1e107c2fbd","939a0961b7368aa5af57c18afce05921386e82f6d6ec2083a7de7a641053c787"],"uploadUrl":"https://upload-firebasehosting.googleapis.com/upload/sites/vishalagrawal-246/versions/bd0b3698fbe5556c/files"}
+[debug] [2026-03-11T15:46:13.100Z] Checked if tokens are valid: true, expires at: 1773247480723
+[debug] [2026-03-11T15:46:13.100Z] Checked if tokens are valid: true, expires at: 1773247480723
+[debug] [2026-03-11T15:46:13.101Z] Checked if tokens are valid: true, expires at: 1773247480723
+[debug] [2026-03-11T15:46:13.102Z] Checked if tokens are valid: true, expires at: 1773247480723
+[debug] [2026-03-11T15:46:13.102Z] Checked if tokens are valid: true, expires at: 1773247480723
+[debug] [2026-03-11T15:46:13.103Z] Checked if tokens are valid: true, expires at: 1773247480723
+[debug] [2026-03-11T15:46:13.103Z] Checked if tokens are valid: true, expires at: 1773247480723
+[debug] [2026-03-11T15:46:13.104Z] Checked if tokens are valid: true, expires at: 1773247480723
+[debug] [2026-03-11T15:46:13.104Z] Checked if tokens are valid: true, expires at: 1773247480723
+[debug] [2026-03-11T15:46:13.105Z] Checked if tokens are valid: true, expires at: 1773247480723
+[debug] [2026-03-11T15:46:13.105Z] Checked if tokens are valid: true, expires at: 1773247480723
+[debug] [2026-03-11T15:46:13.106Z] Checked if tokens are valid: true, expires at: 1773247480723
+[debug] [2026-03-11T15:46:13.106Z] Checked if tokens are valid: true, expires at: 1773247480723
+[debug] [2026-03-11T15:46:13.106Z] Checked if tokens are valid: true, expires at: 1773247480723
+[debug] [2026-03-11T15:46:13.107Z] Checked if tokens are valid: true, expires at: 1773247480723
+[debug] [2026-03-11T15:46:13.107Z] Checked if tokens are valid: true, expires at: 1773247480723
+[debug] [2026-03-11T15:46:13.108Z] Checked if tokens are valid: true, expires at: 1773247480723
+[debug] [2026-03-11T15:46:13.109Z] Checked if tokens are valid: true, expires at: 1773247480723
+[debug] [2026-03-11T15:46:13.109Z] Checked if tokens are valid: true, expires at: 1773247480723
+[debug] [2026-03-11T15:46:13.110Z] Checked if tokens are valid: true, expires at: 1773247480723
+[debug] [2026-03-11T15:46:13.110Z] Checked if tokens are valid: true, expires at: 1773247480723
+[debug] [2026-03-11T15:46:13.111Z] Checked if tokens are valid: true, expires at: 1773247480723
+[debug] [2026-03-11T15:46:13.112Z] Checked if tokens are valid: true, expires at: 1773247480723
+[debug] [2026-03-11T15:46:13.112Z] Checked if tokens are valid: true, expires at: 1773247480723
+[debug] [2026-03-11T15:46:13.113Z] Checked if tokens are valid: true, expires at: 1773247480723
+[debug] [2026-03-11T15:46:13.113Z] Checked if tokens are valid: true, expires at: 1773247480723
+[debug] [2026-03-11T15:46:13.114Z] Checked if tokens are valid: true, expires at: 1773247480723
+[debug] [2026-03-11T15:46:13.114Z] Checked if tokens are valid: true, expires at: 1773247480723
+[debug] [2026-03-11T15:46:13.115Z] Checked if tokens are valid: true, expires at: 1773247480723
+[debug] [2026-03-11T15:46:13.115Z] Checked if tokens are valid: true, expires at: 1773247480723
+[debug] [2026-03-11T15:46:13.115Z] >>> [apiv2][query] POST https://upload-firebasehosting.googleapis.com/upload/sites/vishalagrawal-246/versions/bd0b3698fbe5556c/files/923a80ae3b7c33556666da6192597afe410ac81368edb047bfccd62ad9b17b48 [none]
+[debug] [2026-03-11T15:46:13.116Z] >>> [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/vishalagrawal-246/versions/bd0b3698fbe5556c/files/923a80ae3b7c33556666da6192597afe410ac81368edb047bfccd62ad9b17b48 [stream]
+[debug] [2026-03-11T15:46:13.119Z] >>> [apiv2][query] POST https://upload-firebasehosting.googleapis.com/upload/sites/vishalagrawal-246/versions/bd0b3698fbe5556c/files/2a8d4ec3f5c043fc2f3323f463e116e42cfeb42884ef5e4682de9231dfdc171c [none]
+[debug] [2026-03-11T15:46:13.120Z] >>> [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/vishalagrawal-246/versions/bd0b3698fbe5556c/files/2a8d4ec3f5c043fc2f3323f463e116e42cfeb42884ef5e4682de9231dfdc171c [stream]
+[debug] [2026-03-11T15:46:13.123Z] >>> [apiv2][query] POST https://upload-firebasehosting.googleapis.com/upload/sites/vishalagrawal-246/versions/bd0b3698fbe5556c/files/41ca0fb1e88a5fdf3ab93538c170e6dcacf388d649f6a7f446e540e7a761d7af [none]
+[debug] [2026-03-11T15:46:13.123Z] >>> [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/vishalagrawal-246/versions/bd0b3698fbe5556c/files/41ca0fb1e88a5fdf3ab93538c170e6dcacf388d649f6a7f446e540e7a761d7af [stream]
+[debug] [2026-03-11T15:46:13.126Z] >>> [apiv2][query] POST https://upload-firebasehosting.googleapis.com/upload/sites/vishalagrawal-246/versions/bd0b3698fbe5556c/files/c837eafa21f41330178bf7fcdcfc0a2261d0ba3f0f1360e7da5229843d262ede [none]
+[debug] [2026-03-11T15:46:13.127Z] >>> [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/vishalagrawal-246/versions/bd0b3698fbe5556c/files/c837eafa21f41330178bf7fcdcfc0a2261d0ba3f0f1360e7da5229843d262ede [stream]
+[debug] [2026-03-11T15:46:13.133Z] >>> [apiv2][query] POST https://upload-firebasehosting.googleapis.com/upload/sites/vishalagrawal-246/versions/bd0b3698fbe5556c/files/7b7d744e0dd1ccb357a1d59047bd2d99c9f4e8a8a0f02d00943d98ca4ea1c6a5 [none]
+[debug] [2026-03-11T15:46:13.133Z] >>> [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/vishalagrawal-246/versions/bd0b3698fbe5556c/files/7b7d744e0dd1ccb357a1d59047bd2d99c9f4e8a8a0f02d00943d98ca4ea1c6a5 [stream]
+[debug] [2026-03-11T15:46:13.138Z] >>> [apiv2][query] POST https://upload-firebasehosting.googleapis.com/upload/sites/vishalagrawal-246/versions/bd0b3698fbe5556c/files/f140c02a1d89d8e860e854e805102d2e9222f532f61081d62ac2273d441bb466 [none]
+[debug] [2026-03-11T15:46:13.138Z] >>> [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/vishalagrawal-246/versions/bd0b3698fbe5556c/files/f140c02a1d89d8e860e854e805102d2e9222f532f61081d62ac2273d441bb466 [stream]
+[debug] [2026-03-11T15:46:13.145Z] >>> [apiv2][query] POST https://upload-firebasehosting.googleapis.com/upload/sites/vishalagrawal-246/versions/bd0b3698fbe5556c/files/425548c4a1422b1f7d4a9a1252b872508ad930266d5801118d47f7d08aa55bc5 [none]
+[debug] [2026-03-11T15:46:13.146Z] >>> [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/vishalagrawal-246/versions/bd0b3698fbe5556c/files/425548c4a1422b1f7d4a9a1252b872508ad930266d5801118d47f7d08aa55bc5 [stream]
+[debug] [2026-03-11T15:46:13.153Z] >>> [apiv2][query] POST https://upload-firebasehosting.googleapis.com/upload/sites/vishalagrawal-246/versions/bd0b3698fbe5556c/files/c75c7bc149308d9e5a8e8208ba8c21e55cc879e7fcc6616a827b665a707f3960 [none]
+[debug] [2026-03-11T15:46:13.153Z] >>> [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/vishalagrawal-246/versions/bd0b3698fbe5556c/files/c75c7bc149308d9e5a8e8208ba8c21e55cc879e7fcc6616a827b665a707f3960 [stream]
+[debug] [2026-03-11T15:46:13.158Z] >>> [apiv2][query] POST https://upload-firebasehosting.googleapis.com/upload/sites/vishalagrawal-246/versions/bd0b3698fbe5556c/files/d854f1b97b907919440c6a17fc4475799fa267058a3f3804d20280b614803e30 [none]
+[debug] [2026-03-11T15:46:13.158Z] >>> [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/vishalagrawal-246/versions/bd0b3698fbe5556c/files/d854f1b97b907919440c6a17fc4475799fa267058a3f3804d20280b614803e30 [stream]
+[debug] [2026-03-11T15:46:13.163Z] >>> [apiv2][query] POST https://upload-firebasehosting.googleapis.com/upload/sites/vishalagrawal-246/versions/bd0b3698fbe5556c/files/a837e434ebeb8dbd82aa03f91000086d633da2282db1330cc225f1a299de6e19 [none]
+[debug] [2026-03-11T15:46:13.163Z] >>> [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/vishalagrawal-246/versions/bd0b3698fbe5556c/files/a837e434ebeb8dbd82aa03f91000086d633da2282db1330cc225f1a299de6e19 [stream]
+[debug] [2026-03-11T15:46:13.167Z] >>> [apiv2][query] POST https://upload-firebasehosting.googleapis.com/upload/sites/vishalagrawal-246/versions/bd0b3698fbe5556c/files/03d0db5fcc2c7b6e3e7aa916f50c0f58f520f9f15a5417d7f1d53846d41fe6f1 [none]
+[debug] [2026-03-11T15:46:13.167Z] >>> [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/vishalagrawal-246/versions/bd0b3698fbe5556c/files/03d0db5fcc2c7b6e3e7aa916f50c0f58f520f9f15a5417d7f1d53846d41fe6f1 [stream]
+[debug] [2026-03-11T15:46:13.172Z] >>> [apiv2][query] POST https://upload-firebasehosting.googleapis.com/upload/sites/vishalagrawal-246/versions/bd0b3698fbe5556c/files/05de99f110b5a863a4c0a822411ed2e1a8b5ffe06319a522c9f65c39ae217801 [none]
+[debug] [2026-03-11T15:46:13.173Z] >>> [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/vishalagrawal-246/versions/bd0b3698fbe5556c/files/05de99f110b5a863a4c0a822411ed2e1a8b5ffe06319a522c9f65c39ae217801 [stream]
+[debug] [2026-03-11T15:46:13.178Z] >>> [apiv2][query] POST https://upload-firebasehosting.googleapis.com/upload/sites/vishalagrawal-246/versions/bd0b3698fbe5556c/files/8f4f21244d129a9d341d00f6f4f81a70d36d4933ef54d32716be9fe6da9bd8b3 [none]
+[debug] [2026-03-11T15:46:13.178Z] >>> [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/vishalagrawal-246/versions/bd0b3698fbe5556c/files/8f4f21244d129a9d341d00f6f4f81a70d36d4933ef54d32716be9fe6da9bd8b3 [stream]
+[debug] [2026-03-11T15:46:13.183Z] >>> [apiv2][query] POST https://upload-firebasehosting.googleapis.com/upload/sites/vishalagrawal-246/versions/bd0b3698fbe5556c/files/87b176a3dc8868c164a379376c421a82689af4800e57a34e0a284e1e107c2fbd [none]
+[debug] [2026-03-11T15:46:13.183Z] >>> [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/vishalagrawal-246/versions/bd0b3698fbe5556c/files/87b176a3dc8868c164a379376c421a82689af4800e57a34e0a284e1e107c2fbd [stream]
+[debug] [2026-03-11T15:46:13.188Z] >>> [apiv2][query] POST https://upload-firebasehosting.googleapis.com/upload/sites/vishalagrawal-246/versions/bd0b3698fbe5556c/files/939a0961b7368aa5af57c18afce05921386e82f6d6ec2083a7de7a641053c787 [none]
+[debug] [2026-03-11T15:46:13.188Z] >>> [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/vishalagrawal-246/versions/bd0b3698fbe5556c/files/939a0961b7368aa5af57c18afce05921386e82f6d6ec2083a7de7a641053c787 [stream]
+[debug] [2026-03-11T15:46:13.194Z] [hosting][populate queue][FINAL] {"max":775,"min":775,"avg":775,"active":0,"complete":1,"success":1,"errored":0,"retried":0,"total":1,"elapsed":855}
+[debug] [2026-03-11T15:46:13.195Z] [hosting] uploads queued: 15
+[info] i  hosting: uploading new files [0/15] (0%) 
+[debug] [2026-03-11T15:46:14.510Z] <<< [apiv2][status] POST https://upload-firebasehosting.googleapis.com/upload/sites/vishalagrawal-246/versions/bd0b3698fbe5556c/files/923a80ae3b7c33556666da6192597afe410ac81368edb047bfccd62ad9b17b48 200
+[debug] [2026-03-11T15:46:14.510Z] <<< [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/vishalagrawal-246/versions/bd0b3698fbe5556c/files/923a80ae3b7c33556666da6192597afe410ac81368edb047bfccd62ad9b17b48 [stream]
+[debug] [2026-03-11T15:46:14.550Z] <<< [apiv2][status] POST https://upload-firebasehosting.googleapis.com/upload/sites/vishalagrawal-246/versions/bd0b3698fbe5556c/files/f140c02a1d89d8e860e854e805102d2e9222f532f61081d62ac2273d441bb466 200
+[debug] [2026-03-11T15:46:14.551Z] <<< [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/vishalagrawal-246/versions/bd0b3698fbe5556c/files/f140c02a1d89d8e860e854e805102d2e9222f532f61081d62ac2273d441bb466 [stream]
+[debug] [2026-03-11T15:46:14.563Z] <<< [apiv2][status] POST https://upload-firebasehosting.googleapis.com/upload/sites/vishalagrawal-246/versions/bd0b3698fbe5556c/files/d854f1b97b907919440c6a17fc4475799fa267058a3f3804d20280b614803e30 200
+[debug] [2026-03-11T15:46:14.564Z] <<< [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/vishalagrawal-246/versions/bd0b3698fbe5556c/files/d854f1b97b907919440c6a17fc4475799fa267058a3f3804d20280b614803e30 [stream]
+[debug] [2026-03-11T15:46:14.571Z] <<< [apiv2][status] POST https://upload-firebasehosting.googleapis.com/upload/sites/vishalagrawal-246/versions/bd0b3698fbe5556c/files/05de99f110b5a863a4c0a822411ed2e1a8b5ffe06319a522c9f65c39ae217801 200
+[debug] [2026-03-11T15:46:14.571Z] <<< [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/vishalagrawal-246/versions/bd0b3698fbe5556c/files/05de99f110b5a863a4c0a822411ed2e1a8b5ffe06319a522c9f65c39ae217801 [stream]
+[debug] [2026-03-11T15:46:14.585Z] <<< [apiv2][status] POST https://upload-firebasehosting.googleapis.com/upload/sites/vishalagrawal-246/versions/bd0b3698fbe5556c/files/41ca0fb1e88a5fdf3ab93538c170e6dcacf388d649f6a7f446e540e7a761d7af 200
+[debug] [2026-03-11T15:46:14.586Z] <<< [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/vishalagrawal-246/versions/bd0b3698fbe5556c/files/41ca0fb1e88a5fdf3ab93538c170e6dcacf388d649f6a7f446e540e7a761d7af [stream]
+[debug] [2026-03-11T15:46:14.614Z] <<< [apiv2][status] POST https://upload-firebasehosting.googleapis.com/upload/sites/vishalagrawal-246/versions/bd0b3698fbe5556c/files/87b176a3dc8868c164a379376c421a82689af4800e57a34e0a284e1e107c2fbd 200
+[debug] [2026-03-11T15:46:14.614Z] <<< [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/vishalagrawal-246/versions/bd0b3698fbe5556c/files/87b176a3dc8868c164a379376c421a82689af4800e57a34e0a284e1e107c2fbd [stream]
+[debug] [2026-03-11T15:46:14.636Z] <<< [apiv2][status] POST https://upload-firebasehosting.googleapis.com/upload/sites/vishalagrawal-246/versions/bd0b3698fbe5556c/files/c837eafa21f41330178bf7fcdcfc0a2261d0ba3f0f1360e7da5229843d262ede 200
+[debug] [2026-03-11T15:46:14.637Z] <<< [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/vishalagrawal-246/versions/bd0b3698fbe5556c/files/c837eafa21f41330178bf7fcdcfc0a2261d0ba3f0f1360e7da5229843d262ede [stream]
+[debug] [2026-03-11T15:46:14.663Z] <<< [apiv2][status] POST https://upload-firebasehosting.googleapis.com/upload/sites/vishalagrawal-246/versions/bd0b3698fbe5556c/files/425548c4a1422b1f7d4a9a1252b872508ad930266d5801118d47f7d08aa55bc5 200
+[debug] [2026-03-11T15:46:14.663Z] <<< [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/vishalagrawal-246/versions/bd0b3698fbe5556c/files/425548c4a1422b1f7d4a9a1252b872508ad930266d5801118d47f7d08aa55bc5 [stream]
+[debug] [2026-03-11T15:46:14.709Z] <<< [apiv2][status] POST https://upload-firebasehosting.googleapis.com/upload/sites/vishalagrawal-246/versions/bd0b3698fbe5556c/files/939a0961b7368aa5af57c18afce05921386e82f6d6ec2083a7de7a641053c787 200
+[debug] [2026-03-11T15:46:14.709Z] <<< [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/vishalagrawal-246/versions/bd0b3698fbe5556c/files/939a0961b7368aa5af57c18afce05921386e82f6d6ec2083a7de7a641053c787 [stream]
+[debug] [2026-03-11T15:46:14.758Z] <<< [apiv2][status] POST https://upload-firebasehosting.googleapis.com/upload/sites/vishalagrawal-246/versions/bd0b3698fbe5556c/files/8f4f21244d129a9d341d00f6f4f81a70d36d4933ef54d32716be9fe6da9bd8b3 200
+[debug] [2026-03-11T15:46:14.758Z] <<< [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/vishalagrawal-246/versions/bd0b3698fbe5556c/files/8f4f21244d129a9d341d00f6f4f81a70d36d4933ef54d32716be9fe6da9bd8b3 [stream]
+[debug] [2026-03-11T15:46:14.846Z] <<< [apiv2][status] POST https://upload-firebasehosting.googleapis.com/upload/sites/vishalagrawal-246/versions/bd0b3698fbe5556c/files/03d0db5fcc2c7b6e3e7aa916f50c0f58f520f9f15a5417d7f1d53846d41fe6f1 200
+[debug] [2026-03-11T15:46:14.846Z] <<< [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/vishalagrawal-246/versions/bd0b3698fbe5556c/files/03d0db5fcc2c7b6e3e7aa916f50c0f58f520f9f15a5417d7f1d53846d41fe6f1 [stream]
+[debug] [2026-03-11T15:46:14.932Z] <<< [apiv2][status] POST https://upload-firebasehosting.googleapis.com/upload/sites/vishalagrawal-246/versions/bd0b3698fbe5556c/files/7b7d744e0dd1ccb357a1d59047bd2d99c9f4e8a8a0f02d00943d98ca4ea1c6a5 200
+[debug] [2026-03-11T15:46:14.932Z] <<< [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/vishalagrawal-246/versions/bd0b3698fbe5556c/files/7b7d744e0dd1ccb357a1d59047bd2d99c9f4e8a8a0f02d00943d98ca4ea1c6a5 [stream]
+[debug] [2026-03-11T15:46:15.145Z] <<< [apiv2][status] POST https://upload-firebasehosting.googleapis.com/upload/sites/vishalagrawal-246/versions/bd0b3698fbe5556c/files/a837e434ebeb8dbd82aa03f91000086d633da2282db1330cc225f1a299de6e19 200
+[debug] [2026-03-11T15:46:15.145Z] <<< [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/vishalagrawal-246/versions/bd0b3698fbe5556c/files/a837e434ebeb8dbd82aa03f91000086d633da2282db1330cc225f1a299de6e19 [stream]
+[debug] [2026-03-11T15:46:15.269Z] <<< [apiv2][status] POST https://upload-firebasehosting.googleapis.com/upload/sites/vishalagrawal-246/versions/bd0b3698fbe5556c/files/c75c7bc149308d9e5a8e8208ba8c21e55cc879e7fcc6616a827b665a707f3960 200
+[debug] [2026-03-11T15:46:15.269Z] <<< [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/vishalagrawal-246/versions/bd0b3698fbe5556c/files/c75c7bc149308d9e5a8e8208ba8c21e55cc879e7fcc6616a827b665a707f3960 [stream]
+[debug] [2026-03-11T15:46:15.522Z] <<< [apiv2][status] POST https://upload-firebasehosting.googleapis.com/upload/sites/vishalagrawal-246/versions/bd0b3698fbe5556c/files/2a8d4ec3f5c043fc2f3323f463e116e42cfeb42884ef5e4682de9231dfdc171c 200
+[debug] [2026-03-11T15:46:15.522Z] <<< [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/vishalagrawal-246/versions/bd0b3698fbe5556c/files/2a8d4ec3f5c043fc2f3323f463e116e42cfeb42884ef5e4682de9231dfdc171c [stream]
+[debug] [2026-03-11T15:46:15.522Z] [hosting][upload queue][FINAL] {"max":2422,"min":1412,"avg":1685.1333333333334,"active":0,"complete":15,"success":15,"errored":0,"retried":0,"total":15,"elapsed":2423}
+[info] i  hosting: upload complete 
+[info] +  hosting[vishalagrawal-246]: file upload complete 
+[debug] [2026-03-11T15:46:15.523Z] [hosting] deploy completed after 3308ms
+[debug] [2026-03-11T15:46:15.524Z] [
+  {
+    "config": {
+      "public": ".",
+      "ignore": [
+        "firebase.json",
+        "**/.*",
+        "**/node_modules/**"
+      ],
+      "site": "vishalagrawal-246"
+    },
+    "version": "projects/324021813743/sites/vishalagrawal-246/versions/bd0b3698fbe5556c"
+  }
+]
+[info] i  hosting[vishalagrawal-246]: finalizing version... 
+[debug] [2026-03-11T15:46:15.528Z] Checked if tokens are valid: true, expires at: 1773247480723
+[debug] [2026-03-11T15:46:15.528Z] Checked if tokens are valid: true, expires at: 1773247480723
+[debug] [2026-03-11T15:46:15.530Z] >>> [apiv2][query] PATCH https://firebasehosting.googleapis.com/v1beta1/projects/-/sites/vishalagrawal-246/versions/bd0b3698fbe5556c updateMask=status%2Cconfig
+[debug] [2026-03-11T15:46:15.530Z] >>> [apiv2][body] PATCH https://firebasehosting.googleapis.com/v1beta1/projects/-/sites/vishalagrawal-246/versions/bd0b3698fbe5556c {"status":"FINALIZED","config":{}}
+[debug] [2026-03-11T15:46:16.486Z] <<< [apiv2][status] PATCH https://firebasehosting.googleapis.com/v1beta1/projects/-/sites/vishalagrawal-246/versions/bd0b3698fbe5556c 200
+[debug] [2026-03-11T15:46:16.486Z] <<< [apiv2][body] PATCH https://firebasehosting.googleapis.com/v1beta1/projects/-/sites/vishalagrawal-246/versions/bd0b3698fbe5556c {"name":"projects/324021813743/sites/vishalagrawal-246/versions/bd0b3698fbe5556c","status":"FINALIZED","config":{},"labels":{"deployment-tool":"cli-firebase"},"createTime":"2026-03-11T15:46:11.792871Z","createUser":{"email":"mdvishalagrawal@gmail.com"},"finalizeTime":"2026-03-11T15:46:17.244020Z","finalizeUser":{"email":"mdvishalagrawal@gmail.com"}}
+[debug] [2026-03-11T15:46:16.486Z] [hosting] finalized version for vishalagrawal-246:[object Object]
+[info] +  hosting[vishalagrawal-246]: version finalized 
+[info] i  hosting[vishalagrawal-246]: releasing new version... 
+[debug] [2026-03-11T15:46:16.487Z] Checked if tokens are valid: true, expires at: 1773247480723
+[debug] [2026-03-11T15:46:16.487Z] Checked if tokens are valid: true, expires at: 1773247480723
+[debug] [2026-03-11T15:46:16.488Z] >>> [apiv2][query] POST https://firebasehosting.googleapis.com/v1beta1/projects/-/sites/vishalagrawal-246/channels/live/releases versionName=projects%2F324021813743%2Fsites%2Fvishalagrawal-246%2Fversions%2Fbd0b3698fbe5556c
+[debug] [2026-03-11T15:46:16.488Z] >>> [apiv2][body] POST https://firebasehosting.googleapis.com/v1beta1/projects/-/sites/vishalagrawal-246/channels/live/releases {}
+[debug] [2026-03-11T15:46:17.207Z] <<< [apiv2][status] POST https://firebasehosting.googleapis.com/v1beta1/projects/-/sites/vishalagrawal-246/channels/live/releases 200
