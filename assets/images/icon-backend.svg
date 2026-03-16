@@ -2,8 +2,8 @@
     <!-- Gradient Definition -->
     <defs>
         <linearGradient id="borderGradient" x1="0" y1="0" x2="100" y2="100" gradientUnits="userSpaceOnUse">
-            <stop offset="0.259336" stop-color="#FFDB6E"/>
-            <stop offset="1" stop-color="#FFBC5E"/>
+            <stop offset="0.259336" stop-color="#08F6B6"/>
+            <stop offset="1" stop-color="#00D09C"/>
         </linearGradient>
     </defs>
 
